@@ -1,0 +1,4 @@
+virtenv
+*.pyc
+firmware/BUILD
+
