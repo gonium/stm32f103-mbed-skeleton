@@ -15,8 +15,9 @@ void led_blinker() {
 
 // main() runs in its own thread in the OS
 int main() {
-	confSysClock();
+//	confSysClock();
 	pc.printf("Startup \r\n");
+	led1 = 1;
 
 //	led.start(led_blinker);
 	while (true) {

@@ -8,7 +8,7 @@ $ source ./virtenv/bin/activate
 ````
 
 ````
-$ pip install mbed
+$ pip install mbed-cli
 $ brew install caskroom/cask/gcc-arm-embedded
 ````
 
@@ -39,4 +39,12 @@ $ brew install stlink
 ````
 mbed compile -t GCC_ARM -m NUCLEO_F103RB
 st-flash write BUILD/NUCLEO_F103RB/GCC_ARM/firmware.bin 0x08000000 
+````
+
+
+# cloning a new working copy
+````
+git clone ...
+cd stm32f103-mbed-skeleton
+mbed new .
 ````
